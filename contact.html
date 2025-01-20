@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Débatopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo" class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <div class="search-auth">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher...">
+                    <img src="./img/loop.png" alt="">
+                </div>
+                <div class="auth">
+                    <a href="#" class="create-account">Créer un compte</a>
+                    <a href="#" class="signin">S'identifier</a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="accueil-item"><a href="index.html">Accueil</a></li>
+                <li><a href="#">Vote</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-section">
+            <div class="contact-text">
+                <h2>CONTACTEZ NOUS</h2>
+                <p>Pour toute demande de renseignement</p>
+                <a href="mailto:support@debatopia.com">support@debatopia.com</a>
+            </div>
+
+            <div class="form-container">
+                <form>
+                    <label for="name">Nom Prénom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+                    <button type="submit">Envoyer la demande</button>
+                </form>
+            </div>
+        </div>
+    </main>  
+</body>
+</html>
+
+<!-- External CSS: styles.css -->
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-font {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+}
+
+.img-section {
+    background-color: #fff;
+}
+
+
+.text-section {
+    background-color: #002244;
+    color: #fff;
+}
+
+.search-auth {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    border: 0;
+}
+
+.search-bar {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.accueil-item {
+    border-bottom-color: #fff;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    background-color: #002244;
+    color: white;
+}
+
+header nav ul li {
+    padding: 2rem 0;
+    border-bottom: transparent solid 6px;
+    border-top: transparent solid 6px;
+    transition: border-bottom-color 0.3s linear;
+    max-width: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul li:hover {
+    border-bottom-color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0 10rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244;
+    color: white;
+    list-style: none;
+    margin: 0;
+
+}
+
+header .logo img {
+    margin: 0;
+    width: 8.75rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth .signin {
+    margin-right: 10px;
+    text-decoration: none;
+    color:#002244;
+}
+
+.auth .create-account {
+    margin-right: 10px;
+    text-decoration: none;
+    color:#002244;
+    font-weight: bold;
+}
+
+main .debate-container .text-section span{
+    font-size: 90px;
+    font-family: "Roboto", serif;
+}
+
+main .debate-container .text-section{
+    width: 100%;
+    padding: 1rem;
+    padding-left: 4rem !important;
+    max-width: 500px;
+}
+
+main .debate-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #002244;
+    flex-wrap: wrap;
+}
+
+.debate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.podium-container {
+    display: flex;
+    gap: 50px;
+}
+
+.podium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.speaker {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.speaker .name {
+    position: absolute;
+    top: -20px;
+    font-weight: bold;
+}
+
+.flag {
+    width: 20px;
+    height: 30px;
+}
+
+.speech-bubble {
+    font-size: 2em;
+    font-weight: bold;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #002244;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-text {
+    text-align: left;
+    color: #333;
+    max-width: 400px;
+}
+
+.contact-text h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.contact-text a {
+    color: #002244;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: #0f172a;
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    margin-top: 10%;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #002244;
+}
+</style>
