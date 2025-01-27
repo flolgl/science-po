@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.roboto-font {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    height: 100%;
+}
+
+.img-section {
+    background-color: #fff;
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-section {
+    background-color: #002244;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-auth {
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+}
+
+.search-bar input {
+    border: 0;
+}
+
+.search-bar {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav {
+    display: flex;
+    background-color: #002244;
+    color: white;
+}
+
+header nav ul li {
+    padding: 2rem 0;
+    border-bottom: transparent solid 6px;
+    border-top: transparent solid 6px;
+    transition: border-bottom-color 0.3s linear;
+    max-width: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul li:hover {
+    border-bottom-color: #fff;
+}
+
+header nav ul {
+    display: flex;
+    padding: 0 10rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002244;
+    color: white;
+    list-style: none;
+    margin: 0;
+
+}
+
+header .logo img {
+    margin: 0;
+    width: 8.75rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+}
+
+.auth .signin {
+    margin-right: 15px;
+    text-decoration: none;
+    color:#002244;
+}
+
+.auth .create-account {
+    margin-right: 15px;
+    text-decoration: none;
+    color:#002244;
+    font-weight: bold;
+}
