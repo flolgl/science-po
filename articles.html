@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Débatopia</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="topbar">
-        <div class="logo" class="logo">
-          <a href="index.html"><img src="./img/logo.png" alt="" /></a>
-        </div>
-        <div class="search-auth">
-          <div class="search-bar">
-            <input type="text" placeholder="Rechercher..." />
-            <img src="./img/loop.png" alt="" />
-          </div>
-          <div class="auth">
-            <a href="#" class="create-account">Créer un compte</a>
-            <a href="#" class="signin">S'identifier</a>
-          </div>
-        </div>
-      </div>
+</head>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="vote.html">Vote</a></li>
-          <li class="articles-item"><a href="articles.html">Articles</a></li>
-          <li><a href="#">Discussions</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo" class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt="" /></a>
+            </div>
+            <div class="search-auth">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher..." />
+                    <img src="./img/loop.png" alt="" />
+                </div>
+                <div class="auth">
+                    <a href="#" class="create-account">Créer un compte</a>
+                    <a href="#" class="signin">S'identifier</a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li class="articles-item"><a href="articles.html">Articles</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-      <div class="articles-container">
-        <div class="articles-section">
-          <p class="articles-title">Les derniers articles</p>
-          <p class="articles-text">Ici, accéder et visionnez les derniers articles de l'actualité</p>
-          <div class="card-container">
-            <div class="card">
-                <img src=""></img>
-                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
-                    elit. Viverra est sit tempus</span>
-            </div>
-            <div class="card"><img src=""></img>
-                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
-                    elit. Viverra est sit tempus</span></div>
-            <div class="card"><img src=""></img>
-                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
-                    elit. Viverra est sit tempus</span></div>
+        <div class="articles-container">
+            <div class="articles-section">
+                <p class="articles-title">Les derniers articles</p>
+                <p class="articles-text">Ici, accéder et visionnez les derniers articles de l'actualité</p>
+                <div class="card-container">
+                    <div class="card">
+                        <img src=""></img>
+                        <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            elit. Viverra est sit tempus
+                            <button class="card-button">Voir plus</button></span>
 
-          </div>
-        </div>
-      </div>
+
+                    </div>
+                    <div class="card">
+                        <img src=""></img>
+                        <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            elit. Viverra est sit tempus
+                            <button class="card-button">Voir plus</button></span>
+
+
+                    </div>
+                    <div class="card">
+                        <img src=""></img>
+                        <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                            elit. Viverra est sit tempus
+                            <button class="card-button">Voir plus</button></span>
+
+
+                    </div>
+                   
+                </div>
     </main>
-  </body>
+</body>
+
 </html>
 
 <style>
-  .articles-item {
-    border-bottom-color: #fff;
-  }
+    .articles-item {
+        border-bottom-color: #fff;
+    }
 
-  .articles-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .articles-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .articles-section {
-    width: 75%;
-  }
+    .articles-section {
+        width: 75%;
+    }
 
-  .articles-title {
-    color: #002244;
-    font-size: 36px;
-    font-weight: bolder;
-    text-align: center;
-  }
+    .articles-title {
+        color: #002244;
+        font-size: 36px;
+        font-weight: bolder;
+        text-align: center;
+    }
 
-  .articles-text {
-    text-align: center;
-  }
+    .articles-text {
+        text-align: center;
+    }
 
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px; 
-  }
-  .card {
-    display: flex;
-    width: 300px;
-    height: 380px;
-    background-color: gray;
-    border-radius: 16px;
-    position: relative;
-    padding: 15px;
-  }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
 
-  .card-text {
-    position: absolute;
-    bottom: 10px;
-    font-weight: bolder;
-    font-size: 20px;
-    color: white;
-  }
+    .card {
+        display: flex;
+        width: 300px;
+        height: 380px;
+        background-color: gray;
+        border-radius: 16px;
+        position: relative;
+        padding: 15px;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom: 10px;
+        font-weight: bolder;
+        font-size: 20px;
+        color: white;
+    }
+
+    .card-button {
+        padding: 4px 8px;
+        background-color: #31ACE1;
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
 </style>
