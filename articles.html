@@ -36,7 +36,26 @@
     </header>
 
     <main>
-      <div class="articles-section"></div>
+      <div class="articles-container">
+        <div class="articles-section">
+          <p class="articles-title">Les derniers articles</p>
+          <p class="articles-text">Ici, accéder et visionnez les derniers articles de l'actualité</p>
+          <div class="card-container">
+            <div class="card">
+                <img src=""></img>
+                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                    elit. Viverra est sit tempus</span>
+            </div>
+            <div class="card"><img src=""></img>
+                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                    elit. Viverra est sit tempus</span></div>
+            <div class="card"><img src=""></img>
+                <span class="card-text">Lorem ipsum dolor sit amet, consectetur
+                    elit. Viverra est sit tempus</span></div>
+
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
@@ -44,5 +63,52 @@
 <style>
   .articles-item {
     border-bottom-color: #fff;
+  }
+
+  .articles-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .articles-section {
+    width: 75%;
+  }
+
+  .articles-title {
+    color: #002244;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .articles-text {
+    text-align: center;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+  }
+  .card {
+    display: flex;
+    width: 300px;
+    height: 380px;
+    background-color: gray;
+    border-radius: 16px;
+    position: relative;
+    padding: 15px;
+  }
+
+  .card-text {
+    position: absolute;
+    bottom: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
   }
 </style>
