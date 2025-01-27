@@ -27,9 +27,9 @@
 
         <nav>
             <ul>
-                <li class="accueil-item"><a href="#">Accueil</a></li>
-                <li><a href="vote.html">Vote</a></li>
-                <li><a href="articles.html">Articles</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="accueil-item"><a href="vote.html">Vote</a></li>
+                <li><a href="#">Articles</a></li>
                 <li><a href="#">Discussions</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -37,12 +37,15 @@
     </header>
 
     <main>
-        <div class="debate-container">
-            <div class="img-section"><img src="img/amico.png" alt=""></div>
-            <div class="text-section">
-                <span>Proposez, débattez, réflechissez, votez</span>
+        <section class="votes-container">
+            <h1>Les derniers votes</h1>
+            <p>Ici, accédez et participez à tous les derniers votes pour la ville !</p>
+            <div class="vote-buttons">
+                <button class="vote-btn">Piste cyclable</button>
+                <button class="vote-btn">Réduire les délits et la crimininalité</button>
+                <button class="vote-btn">Banque alimentaire</button>
             </div>
-        </div>
+        </section>
     </main>
 
 
@@ -213,3 +216,60 @@ main .debate-container {
     background-color: #002244;
     flex-wrap: wrap;
 }
+
+ /* Section des votes */
+ .votes-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+/* Titre principal */
+.votes-container h1 {
+    font-size: 2.5rem;
+    color: #002244;
+    margin-bottom: 1rem;
+}
+
+/* Sous-titre */
+.votes-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Conteneur des boutons */
+.vote-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Style des boutons */
+.vote-btn {
+    background-color: #002244;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 300px;
+    text-align: center;
+}
+
+/* Effets hover et focus */
+.vote-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vote-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
