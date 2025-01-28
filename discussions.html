@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Débatopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="logo" class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="search-auth">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher...">
+                    <img src="img/loop.png" alt="">
+                </div>
+                <div class="auth">
+                    <a href="#" class="create-account">Créer un compte</a>
+                    <a href="#" class="signin">S'identifier</a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="vote.html">Vote</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li class="contact-item"><a href="discussions.html">Discussions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="discussion-container">
+            <div class="new-post">
+                <div class="avatar-container">
+                    <img src="img/avatar.png" alt="Avatar" class="avatar">
+                </div>
+                <input class="input-search" type="text" placeholder="Écrire un message...">
+                <button class="new-post-button">Nouveau Post</button>
+            </div>
+            <div class="post-container">
+                <div class="post">
+                    <div class="img-container">
+                        <img src="img/vegetables.png" alt="Avatar" class="img-vg">
+                    </div>
+                    <div class="" style="width: 100%;">
+                        <h2 style="padding: 0 0.5rem;">Vers une alimentation plus durable</h2>
+                        <div class="post-name-container">
+                            <div class="avatar-container">
+                                <div class="post-avatar-container">
+                                    <img src="img/avatar.png" alt="Avatar" class="post-avatar">
+                                </div>
+                                <div style="display: flex; flex-direction: column; padding: 0.5rem;">
+                                    <span>Jean Salade</span>
+                                    <span style="color: #377EE8; font-size: 0.7rem;">10/11/2024</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;color: #377EE8;">
+                                <span>1 234 vues</span>
+                                <span>50 soutiens</span>
+                                <span>18 commentaires</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post">
+                    <div class="img-container">
+                        <img src="img/herisson.png" alt="Avatar" class="img-vg">
+                    </div>
+                    <div class="" style="width: 100%;">
+                        <h2 style="padding: 0 0.5rem;">Abri pour les chauves-souris et hérissons</h2>
+                        <div class="post-name-container">
+                            <div class="avatar-container">
+                                <div class="post-avatar-container">
+                                    <img src="img/avatar.png" alt="Avatar" class="post-avatar">
+                                </div>
+                                <div style="display: flex; flex-direction: column; padding: 0.5rem;">
+                                    <span>Paul Herisson</span>
+                                    <span style="color: #377EE8; font-size: 0.7rem;">12/11/2024</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;color: #377EE8;">
+                                <span>1 564 vues</span>
+                                <span>27 soutiens</span>
+                                <span>18 commentaires</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post">
+                    <div class="img-container">
+                        <img src="img/plants.png" alt="Avatar" class="img-vg">
+                    </div>
+                    <div class="" style="width: 100%;">
+                        <h2 style="padding: 0 0.5rem;">Respirons mieux grace aux arbres</h2>
+                        <div class="post-name-container">
+                            <div class="avatar-container">
+                                <div class="post-avatar-container">
+                                    <img src="img/avatar.png" alt="Avatar" class="post-avatar">
+                                </div>
+                                <div style="display: flex; flex-direction: column; padding: 0.5rem;">
+                                    <span>Marc Arbuste</span>
+                                    <span style="color: #377EE8; font-size: 0.7rem;">03/04/2025</span>
+                                </div>
+                            </div>
+                            <div style="padding: 1rem;color: #377EE8;">
+                                <span>1 066 vues</span>
+                                <span>41 soutiens</span>
+                                <span>5 commentaires</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>  
+</body>
+</html>
+
+<style>
+    .discussion-container {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: flex-start; */
+        /* height: 100vh; */
+        padding: 1rem 10rem;
+        background-color: #F8F8F8;
+    }
+
+    .new-post {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 3rem;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        margin: 1rem 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        justify-content: space-around;
+    }
+
+    .new-post .avatar {
+        width: 3rem;
+    } 
+
+    .post-avatar {
+        width: 100%;
+    }
+    .post-avatar-container {
+        width: 2rem;
+        background-color: #F0F1FE;
+        border-radius: 32px;
+        padding: 0.5rem;
+
+    }
+
+    .avatar-container {
+        display: flex;
+    }
+    .new-post-button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .input-search {
+        width: 30rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .avatar-container{
+        padding: 0.5rem;
+        background: white;
+        border-radius: 2rem;
+    }
+
+    .post-container {
+        display: flex;
+        gap: 10px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        margin: 1rem 0;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    .img-vg {
+        width: 10rem;
+    }
+
+    .post {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .post-name-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
